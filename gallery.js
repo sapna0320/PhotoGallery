@@ -27,3 +27,10 @@ document.getElementById("image").style.backgroundImage="url('')";
 document.getElementById("image").innerHTML="Hover over an image below to display here."   
        
 }
+function addTabIndex(){
+   arrImg=document.querySelectorAll(".preview");
+   for(i=0;i<arrImg.length;i++){
+      console.log(i);
+      arrImg[i].setAttribute("tabindex",0);
+   }
+}
